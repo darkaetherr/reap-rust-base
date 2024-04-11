@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sugoi-base", "sugoi-base\sugoi-base.vcxproj", "{C8F266B1-1784-47E6-A675-164944E42338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libs", "libs", "{5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crt", "libs\crt\crt.vcxitems", "{A8145E38-BB39-4FFD-8A48-576E38DEEEC3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stl", "libs\stl\stl.vcxitems", "{1FAE2952-F9C5-4F56-AB31-2ACB5A24A10C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "obfy", "libs\obfy\obfy.vcxitems", "{C3D6420F-301C-40D7-AEBB-CEAF2D12F147}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "memory", "libs\memory\memory.vcxitems", "{46528B89-05E9-4631-84E9-587E94D789FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{15F6BEA0-5477-4DA0-A2EB-0C726218568D}"
+	ProjectSection(SolutionItems) = preProject
+		.clang-format = .clang-format
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "linuxpe", "libs\linuxpe\linuxpe.vcxitems", "{290AB953-84D6-4C2C-AB09-68711A9830CC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "logging", "libs\logging\logging.vcxitems", "{5438C015-87EA-4117-BE66-AEDC8498BEE0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+		ReleaseWithLogging|x64 = ReleaseWithLogging|x64
+		ReleaseWithLogging|x86 = ReleaseWithLogging|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8F266B1-1784-47E6-A675-164944E42338}.Debug|x64.ActiveCfg = Debug|x64
+		{C8F266B1-1784-47E6-A675-164944E42338}.Debug|x64.Build.0 = Debug|x64
+		{C8F266B1-1784-47E6-A675-164944E42338}.Debug|x86.ActiveCfg = Debug|Win32
+		{C8F266B1-1784-47E6-A675-164944E42338}.Debug|x86.Build.0 = Debug|Win32
+		{C8F266B1-1784-47E6-A675-164944E42338}.Release|x64.ActiveCfg = Release|x64
+		{C8F266B1-1784-47E6-A675-164944E42338}.Release|x64.Build.0 = Release|x64
+		{C8F266B1-1784-47E6-A675-164944E42338}.Release|x86.ActiveCfg = Release|Win32
+		{C8F266B1-1784-47E6-A675-164944E42338}.Release|x86.Build.0 = Release|Win32
+		{C8F266B1-1784-47E6-A675-164944E42338}.ReleaseWithLogging|x64.ActiveCfg = ReleaseWithLogging|x64
+		{C8F266B1-1784-47E6-A675-164944E42338}.ReleaseWithLogging|x64.Build.0 = ReleaseWithLogging|x64
+		{C8F266B1-1784-47E6-A675-164944E42338}.ReleaseWithLogging|x86.ActiveCfg = ReleaseWithLogging|Win32
+		{C8F266B1-1784-47E6-A675-164944E42338}.ReleaseWithLogging|x86.Build.0 = ReleaseWithLogging|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A8145E38-BB39-4FFD-8A48-576E38DEEEC3} = {5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}
+		{1FAE2952-F9C5-4F56-AB31-2ACB5A24A10C} = {5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}
+		{C3D6420F-301C-40D7-AEBB-CEAF2D12F147} = {5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}
+		{46528B89-05E9-4631-84E9-587E94D789FA} = {5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}
+		{290AB953-84D6-4C2C-AB09-68711A9830CC} = {5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}
+		{5438C015-87EA-4117-BE66-AEDC8498BEE0} = {5BC0C20B-9BEB-44A0-ABAE-827A90E027A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16F62116-E528-4997-94D7-81C1F49A5861}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		libs\stl\stl.vcxitems*{1fae2952-f9c5-4f56-ab31-2acb5a24a10c}*SharedItemsImports = 9
+		libs\linuxpe\linuxpe.vcxitems*{290ab953-84d6-4c2c-ab09-68711a9830cc}*SharedItemsImports = 9
+		libs\memory\memory.vcxitems*{46528b89-05e9-4631-84e9-587e94d789fa}*SharedItemsImports = 9
+		libs\logging\logging.vcxitems*{5438c015-87ea-4117-be66-aedc8498bee0}*SharedItemsImports = 9
+		libs\crt\crt.vcxitems*{a8145e38-bb39-4ffd-8a48-576e38deeec3}*SharedItemsImports = 9
+		libs\obfy\obfy.vcxitems*{c3d6420f-301c-40d7-aebb-ceaf2d12f147}*SharedItemsImports = 9
+		libs\crt\crt.vcxitems*{c8f266b1-1784-47e6-a675-164944e42338}*SharedItemsImports = 4
+		libs\linuxpe\linuxpe.vcxitems*{c8f266b1-1784-47e6-a675-164944e42338}*SharedItemsImports = 4
+		libs\logging\logging.vcxitems*{c8f266b1-1784-47e6-a675-164944e42338}*SharedItemsImports = 4
+		libs\memory\memory.vcxitems*{c8f266b1-1784-47e6-a675-164944e42338}*SharedItemsImports = 4
+		libs\obfy\obfy.vcxitems*{c8f266b1-1784-47e6-a675-164944e42338}*SharedItemsImports = 4
+		libs\stl\stl.vcxitems*{c8f266b1-1784-47e6-a675-164944e42338}*SharedItemsImports = 4
+	EndGlobalSection
+EndGlobal

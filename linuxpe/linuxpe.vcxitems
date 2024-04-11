@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{290ab953-84d6-4c2c-ab09-68711a9830cc}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\archive.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\auxiliaries\aux_file_name.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\auxiliaries\aux_function.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\auxiliaries\aux_function_delimiter.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\auxiliaries\aux_section.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\auxiliaries\aux_weak_external.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\file_header.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\image.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\import_library.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\line_number.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\reloc.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\section_header.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\string.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\symbol.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\coff\uleb128.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\img_common.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\data_directories.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_debug.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_delay_load.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_exceptions.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_export.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_iat.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_import.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_load_config.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_relocs.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_resource.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_security.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\directories\dir_tls.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\image.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\nt_headers.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)linuxpe\nt\optional_header.hpp" />
+  </ItemGroup>
+</Project>

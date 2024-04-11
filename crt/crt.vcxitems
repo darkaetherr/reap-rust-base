@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{a8145e38-bb39-4ffd-8a48-576e38deeec3}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\chkstk.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\crt.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\detail\stb_sprintf.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\abs.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\acosf.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\asinf.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\atan.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\atan2.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\ceil.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\cos.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\detail.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\exp.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\exp2f.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\floor.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\log.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\mod.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\pow.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\round.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\sin.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\sqrt.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\tan.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\math\trunc.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\memory.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\sort.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\sprintf.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)crt\string.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)crt\sprintf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_chkstk.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_general.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_math.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_memory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_sort.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_sprintf.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)wrap\wrap_string.cpp" />
+  </ItemGroup>
+</Project>

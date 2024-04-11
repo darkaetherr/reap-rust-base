@@ -1,0 +1,16 @@
+#pragma once
+#include "typeinfo.hpp"
+#include "yvals.hpp"
+
+#include "deque.hpp"
+//#include "functional.hpp"
+#include "hash.hpp"
+#include "map.hpp"
+#include "optional.hpp"
+#include "stack.hpp"
+#include "string.hpp"
+#include "tuple.hpp"
+#include "unordered_map.hpp"
+#include "vector.hpp"
+#include "xstring.hpp"
+#include "xtree.hpp"

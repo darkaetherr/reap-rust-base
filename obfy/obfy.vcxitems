@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{c3d6420f-301c-40d7-aebb-ceaf2d12f147}</ItemsProjectGuid>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)obfy.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)obfy\fnv1a.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)obfy\lazy_importer.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)obfy\obfy.hpp" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)obfy\xorstr.hpp" />
+  </ItemGroup>
+</Project>
